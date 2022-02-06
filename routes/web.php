@@ -11,6 +11,9 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+//stocks一覧画面を表示
+Route::get('/', 'StockController@stockList');
+Route::post('/', 'StockController@store');
+
+//Auth::routes();
+//Route::get('/home', 'HomeController@index')->name('home');
