@@ -1,0 +1,169 @@
+/*BODY*/
+
+.yourStocks{
+    position:relative;
+    height:80px;
+    top:25px;
+    left:5%;
+    margin:0;
+    margin-bottom: 10px;
+}
+
+/*---------ストック情報表示---------*/
+.stocks{
+    position : relative;
+    background-color: whitesmoke;
+}
+
+.stock{
+    background-color: white;
+    margin-left: 8%;
+    width:540px;
+    height:60px;
+    z-index:2;
+    border-radius: 5px;
+    box-shadow: 1px 1.5px 2px rgba(0,0,0, .22);
+}
+
+.name{
+    padding:8px 0 0 5px;
+    font-weight: bold;
+    margin:0;
+    margin-left: 20px;
+}
+
+.created_at{
+    font-size:small;
+    margin:0;
+    margin-left: 30px;
+}
+
+.delet_button{
+    margin-right: 0;
+}
+
+
+
+.buttons{
+    display:inline-block;
+    padding: 0px 20px;
+}
+
+
+/*-----------ポップアップ------------*/
+.stocksHeader{
+    display: inline;
+}
+
+
+.reg__png{
+    position:absolute;
+    top:8vh;
+    left:30vw;
+    width:70px;
+    height:70px;
+    cursor: pointer;
+}
+
+
+
+.explain{
+    position:absolute;
+    padding:0;
+    margin:0;
+    width:300;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.name_form{
+    padding:0;
+    position: absolute;
+    top:50%;
+    left:25%;
+    display: inline;
+}
+
+.cta{
+    font-size:70%;
+    color:black;
+    text-decoration: none;
+    position:fixed;
+    top:10;
+    right: 10;
+}
+
+.back{
+    position: absolute;
+    top:0;
+    background:black;
+    border-radius: 0;
+    color:white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#popup{
+    z-index:3;
+    position:fixed;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width:400px;
+    height :120px;
+    padding: 0px;
+    background: #fff;
+    box-shadow: 0 5px 30px rgba(0,0,0,.30);
+    display:none;
+}
+
+
+label{
+    display:block;
+}
+
+label span{
+    display: block;
+    background:#FF8856;
+    color:#fff;
+    width:50px;
+    height:50px;
+    line-height: 50px;
+    border-radius: 5%;
+    text-align:center;
+}
+
+label span:hover{
+    cursor:pointer;
+}
+
+input[type="checkbox"]{
+    display: none;
+}
+
+input[type="checkbox"]:checked + #popup{
+    display:block;
+}
+
+/*--------------------------------------------------------*/
+
+/*---------BODY_POSTS----------*/
+.body_posts{
+    position: absolute;
+    top:70px;
+    right:15em;
+    background:white;
+    width:350px;
+    border-radius: 20px;
+    box-shadow: 1px 1.5px 2px rgba(0,0,0, .22);
+}
+
+.body_posts_style{
+    padding:0.5em 1em;
+}
+
+.body_posts_title{
+    border-bottom:3px solid whitesmoke;
+}
+

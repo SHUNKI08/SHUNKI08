@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use App\Stock;
 use Illuminate\Http\Request;
 
-class StockController extends Controller
+class StocksController extends Controller
 {
     public function stockList(Stock $stock)
     {
@@ -19,5 +19,16 @@ class StockController extends Controller
         return redirect('/');
     }
     
+    public function delete(Stock $stock)
+    {
+        $stock->delete();
+        return redirect('/');
+    }
+    
+    public function posts(Stock $stock)
+    {
+        return view('stock/posts')->with(['stock' => $stock->get()]);
+    }
 }
+
 ?>

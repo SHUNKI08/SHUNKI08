@@ -1,0 +1,1 @@
+<div class="footer_text">Stocock / 古賀駿輝</div>
