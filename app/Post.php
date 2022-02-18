@@ -5,16 +5,16 @@ namespace App;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
 
-class Stock extends Model
+class Post extends Model
 {
     use SoftDeletes;
     
     //テーブル名
-    protected $table = 'stocks';
+    protected $table = 'posts';
     
     //可変項目
     protected $fillable =[
-        'name'
+        'name','recipe','materials','image_path'
     ];
 
     public function getByLimit(int $limit_count = 10)
