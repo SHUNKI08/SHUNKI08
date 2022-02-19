@@ -20,6 +20,8 @@ Route::delete('/stocks/{stock}', 'StocksController@delete');
 Route::get('/posts', 'PostsController@postList');
 Route::post('/posts', 'PostsController@store');
 Route::delete('/posts/{post}', 'PostsController@delete');
+//posts検索機能
+Route::post('/postlist','FormController@postlist');
 
 
 /*

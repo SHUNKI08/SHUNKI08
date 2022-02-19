@@ -25,6 +25,11 @@
     margin-left: 20px;
 }
 
+.image_path{
+    position:relative;
+    width:100%;
+}
+
 .name{
     margin:0;
     margin-bottom:10px;
