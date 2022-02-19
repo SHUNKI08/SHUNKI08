@@ -22,6 +22,16 @@
     </label>
 </span>
 
+
+<!--【仮設置】材料検索フォーム-->
+<h4>レシピ検索 (任意の材料を指定してください。)</h4>
+<form method="POST" action="/postlist">
+    @csrf //postlistへ材料名を飛ばす
+    <input type="text" name="material">
+    <input type="submit" value="検索">
+</form>
+
+
 <!--Stock一覧表示-->
 <div class='stocks'>
 
@@ -55,6 +65,6 @@
 </div>
 
 <!-- CSS , Java Script -->
-<link href="/css/list.css" rel="stylesheet">
+<link href="/css/index.css" rel="stylesheet">
 <script src="js/main.js"></script>
 @endsection

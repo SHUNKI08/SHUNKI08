@@ -18,7 +18,7 @@
                 <textarea class="recipe_form"rows="10" cols="60" required name="post[recipe]" placeholder="レシピ"></textarea>
                 
                 <!-- 画像アップロードフォーム -->
-                <input type="file" required name="post[image_path]">
+                <input type="file" required name="image">
                 {{ csrf_field() }}
                 
                 <input type="submit" value="登録"/>
@@ -33,7 +33,7 @@
 
     @foreach ($posts as $post)
         <div class="post">
-            <a>{{ $post->image_path }}</a>
+            <img class="image_path" src="https://stocoock.s3.ap-northeast-1.amazonaws.com/{{ $post->image_path }}">
             <h2 class="name">{{ $post->name }}</h2>
             <h4 class="materials">{{ $post->materials }}</h4>
             <a class="recipe">{{$post->recipe }}</a>

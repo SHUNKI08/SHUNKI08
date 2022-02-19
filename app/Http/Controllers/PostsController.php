@@ -15,17 +15,16 @@ class PostsController extends Controller
     
     public function store(Request $request, Post $post)
     {
-        $input = $request['post'];
-        $post->fill($input)->save();
-        return redirect('/posts');
         
         //画像アップロードに関して
-        $image_path = $request->file('post[image_path]');
-        $path = Storage::desk('s3')->putFile('post_image/',$image_path,'public');
-        $full_path->image_path = Storage::desk('s3')->url($path);
-        $full_path->fill($input)->save();
+        $image_path = $request->file('image');
+        $path = Storage::disk('s3')->putFile('post_image',$image_path,'public');
         
-        return redirect('stock/posts');
+        $input = $request['post'];
+        $input += ['image_path' => $path];  
+        $post->fill($input)->save();
+        
+        return redirect('/posts')->with(['posts' => $post->get()]);
     }
     
     public function delete(Post $post)

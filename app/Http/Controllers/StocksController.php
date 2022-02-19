@@ -9,7 +9,7 @@ class StocksController extends Controller
 {
     public function stockList(Stock $stock)
     {
-        return view('stock/list')->with(['stocks' => $stock->get()]);  
+        return view('stock/index')->with(['stocks' => $stock->get()]);  
     }
     
     public function store(Request $request, Stock $stock)
@@ -27,7 +27,7 @@ class StocksController extends Controller
     
     public function posts(Stock $stock)
     {
-        return view('stock/posts')->with(['stock' => $stock->get()]);
+        return view('stock/index')->with(['stock' => $stock->get()]);
     }
 }
 
