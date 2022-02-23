@@ -1,0 +1,49 @@
+/*---------posts情報表示---------*/
+.posts{
+    position : relative;
+    left: 8%;
+    background-color: whitesmoke;
+    display: inline-flex;
+    flex-wrap:wrap;
+}
+
+.post{
+    position: relative;
+    background-color: white;
+    width:300px;
+    z-index:2;
+    border-radius: 5px;
+    box-shadow: 1px 1.5px 2px rgba(0,0,0, .22);
+    padding:1.5%;
+    margin:0;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+.image_path{
+    position:relative;
+    width:100%;
+    border-radius: 2%;
+}
+
+.name{
+    margin:0;
+    margin-bottom:10px;
+}
+
+.materials{
+    margin:0;
+    margin-bottom:10px;
+}
+
+.recipe{
+    white-space: pre-wrap;
+    margin-bottom: 10px;
+    line-height: 1.5em;
+}
+
+.created_at{
+    text-align: right;
+    margin:0;
+    margin-bottom:10px;
+}

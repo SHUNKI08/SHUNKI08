@@ -2,31 +2,25 @@
 @section('title','材料検索結果')
 
 @section('content')
-<h2>レシピ検索結果</h2>
-<p>検索材料:{{ $material }}</p>
+<h2>検索結果</h2>
+<div class="posts">
 
-@if(!$items->isEmpty()) //検索結果があるか確認してある時の処理
-<table>
-    <tr><th>材料名</th><th>料理名</th><th>レシピ</th>
-    @foreach($items as item) //$itemsでコントローラーから渡された値を@foreachで表示
-        <tr>
-            <td>{{ $item->materials }}</td>
-            <td>{{ $item->name }}</td>
-            <td>{{ $item->recipe }}</td>
-        </tr>
+    @foreach ($items as $item)
+        <div class="post">
+            <img class="image_path" src="https://stocoock.s3.ap-northeast-1.amazonaws.com/{{ $item->image_path }}">
+            <h2 class="name">{{ $item->name }}</h2>
+            <h4 class="materials">{{ $item->materials }}</h4>
+            <a class="recipe">{{$item->recipe }}</a>
+            <br>
+            <a class="created_at">{{ $item->created_at }}</a>
+                </form>
+        </div>
     @endforeach
-{{ $items->appends(Request::only('material'))->links()}}
-</table>
-@else //検索結果があるか確認して無い時の処理
-    <p>該当する料理は存在しません</p>
-    <h2>レシピ検索</h2>
-    <form method="GET" action="/postslist">
-        <input type="text" name="material">
-        <input type="submit" value="検索">
-    </form>
-@endif
+    
+</div>
 
 <!-- CSS , Java Script -->
-<link href="/css/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA.css" rel="stylesheet">
+<link href="/css/postlist.css" rel="stylesheet">
 <script src="js/main.js"></script>
 @endsection
+

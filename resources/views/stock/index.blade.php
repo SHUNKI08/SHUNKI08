@@ -25,8 +25,8 @@
 
 <!--【仮設置】材料検索フォーム-->
 <h4>レシピ検索 (任意の材料を指定してください。)</h4>
-<form method="POST" action="/postlist">
-    @csrf //postlistへ材料名を飛ばす
+<form method="GET" action="/postlist"> <!--postlistへ材料名を飛ばす-->
+    @csrf
     <input type="text" name="material">
     <input type="submit" value="検索">
 </form>
