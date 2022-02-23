@@ -16,17 +16,15 @@ Route::get('/', 'StocksController@stockList');
 Route::post('/', 'StocksController@store');
 Route::delete('/stocks/{stock}', 'StocksController@delete');
 
+//posts検索機能
+Route::get('/postlist','FormController@postlist');
+
 //posts関係
 Route::get('/posts', 'PostsController@postList');
 Route::post('/posts', 'PostsController@store');
 Route::delete('/posts/{post}', 'PostsController@delete');
-//posts検索機能
-Route::post('/postlist','FormController@postlist');
 
 
-/*
-Route::resource('/posts', 'PostController@search');
-*/
+Auth::routes();
 
-//Auth::routes();
-//Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/home', 'HomeController@index')->name('home');

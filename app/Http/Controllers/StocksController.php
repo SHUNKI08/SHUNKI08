@@ -27,7 +27,7 @@ class StocksController extends Controller
     
     public function posts(Stock $stock)
     {
-        return view('stock/index')->with(['stock' => $stock->get()]);
+        return view('stock/postlist',['items' => $item])->with(['stock' => $stock->get()]);
     }
 }
 

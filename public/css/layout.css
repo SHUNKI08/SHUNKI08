@@ -69,14 +69,14 @@ header{
 
 /*----------BODY----------*/
 body{
-    height: 3000px;
+    height: auto;
     margin:0;
+    padding:0;
 }
 
 .container{
-    height:3000px;
     z-index:0;
-    padding: 50px 10% 0 10%;
+    padding: 3% 10% 0 10%;
     position:relative;
     line-height: 1;
     background-color:whitesmoke;

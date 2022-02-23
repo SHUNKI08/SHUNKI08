@@ -12,22 +12,27 @@
     position : relative;
     left: 8%;
     background-color: whitesmoke;
+    display: inline-flex;
+    flex-wrap:wrap;
 }
 
 .post{
+    position: relative;
     background-color: white;
-    width:540px;
+    width:300px;
     z-index:2;
     border-radius: 5px;
     box-shadow: 1px 1.5px 2px rgba(0,0,0, .22);
     padding:1.5%;
     margin:0;
     margin-left: 20px;
+    margin-bottom: 20px;
 }
 
 .image_path{
     position:relative;
     width:100%;
+    border-radius: 2%;
 }
 
 .name{
@@ -63,7 +68,6 @@
     top:8vh;
     left:30vw;
     width:70px;
-    height:70px;
     cursor: pointer;
 }
 
