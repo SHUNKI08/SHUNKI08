@@ -20,5 +20,4 @@
         </div>
     </div>
 </div>
-<link href="resources/sass/_variables.scss" rel="stylesheet">
 @endsection

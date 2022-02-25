@@ -6,4 +6,4 @@
         <li><a class="nav__c"href="/postlist">PostList</a></li>
     </ui>
 </nav>
-<a class="nav__button" href="000"><button class="contact">Contact</button></a>
+<a class="nav__button" href="/user"><button class="user">User</button></a>

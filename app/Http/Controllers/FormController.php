@@ -30,7 +30,7 @@ class FormController extends Controller
         }
         
         //dd($item);
-        return view('stock.postlist', compact('item'))->with('items',$item);
+        return view('stock.postlist', compact('item'))->with('items',$item)->with('material',$material);
         //一覧のpostlist.blade.phpを表示させる時に$itemに格納された結果と検索ワードを渡す
     }
 }

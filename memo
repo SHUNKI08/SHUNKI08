@@ -1,27 +1,2 @@
-/*<h2>レシピ検索結果</h2>
-//<p>検索材料:{{ $material }}</p>
-
-@if(!$items->isEmpty()) //検索結果があるか確認してある時の処理
-
-    {{$items}}
-    @foreach($items as $item) //$itemsでコントローラーから渡された値を@foreachで表示
-        <div class="post">
-            //<img class="image_path" src="https://stocoock.s3.ap-northeast-1.amazonaws.com/{{ $item->image_path }}">
-            <h2 class="name">{{ $item->name }}</h2>
-           // <h4 class="materials">{{ $item->materials }}</h4>
-            //<a class="recipe">{{$item->recipe }}</a>
-            //<br>
-            //<a class="created_at">{{ $item->created_at }}</a>
-        </div>
-    @endforeach
-//{{ $items->appends(Request::only('material'))->links()}}
-
-
-@else //検索結果があるか確認して無い時の処理
-    <p>該当する料理は存在しません</p>
-    <h2>レシピ検索</h2>
-    <form method="GET" action="/postlist">
-        <input type="text" name="material">
-        <input type="submit" value="検索">
-    </form>
-@endif
+■ TESTユーザ情報
+・test_1 / test_1@mail.com / PA:testtest

@@ -3,6 +3,8 @@
 
 @section('content')
 <h2>検索結果</h2>
+<h3>検索ワード : {{$material}}</h3>
+<br>
 <div class="posts">
 
     @foreach ($items as $item)
