@@ -10,12 +10,18 @@ class Stock extends Model
     use SoftDeletes;
     
     //テーブル名
-    protected $table = 'stocks';
+    protected $table = 'stocoock.stocks';
     
     //可変項目
     protected $fillable =[
-        'name'
+        'name','user_id'
     ];
+    
+    //リレーションの設定。ストックは一つのユーザーに従属する。
+    public function user()
+    {
+        return $table->belongsTo('App\User');
+    }
 
     public function getByLimit(int $limit_count = 10)
     {

@@ -4,6 +4,7 @@
 @section('content')
 <span class="stocksHeader">
     <h1 class='yourStocks'>Your Stocks</h1>
+    
     <!--ストック追加ポップアップ-->
     <label class="stockRegister">
         <img class="reg__png"src="/images/stockRegister.png">

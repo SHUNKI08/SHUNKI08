@@ -24,6 +24,9 @@ Route::get('/posts', 'PostsController@postList');
 Route::post('/posts', 'PostsController@store');
 Route::delete('/posts/{post}', 'PostsController@delete');
 
+//user関連
+//ユーザーページ表示
+Route::get('/user', 'UsersController@mypage');
 
 Auth::routes();
 

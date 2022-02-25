@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Post;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Storage;
+use Illuminate\Support\Facades\Auth;
 
 class PostsController extends Controller
 {
@@ -20,8 +21,12 @@ class PostsController extends Controller
         $image_path = $request->file('image');
         $path = Storage::disk('s3')->putFile('post_image',$image_path,'public');
         
+        //user_idカラムについて。ログインしているuserが所持するidと同値を入力。
+        $user_id = Auth::id();
+        
         $input = $request['post'];
-        $input += ['image_path' => $path];  
+        $input += ['image_path' => $path];
+        $input += ['user_id' => $user_id];
         $post->fill($input)->save();
         
         return redirect('/posts')->with(['posts' => $post->get()]);

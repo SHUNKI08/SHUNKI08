@@ -14,8 +14,14 @@ class Post extends Model
     
     //可変項目
     protected $fillable =[
-        'name','recipe','materials','image_path'
+        'name','recipe','materials','image_path','user_id'
     ];
+    
+    //リレーションの設定。投稿は一つのユーザーに従属する。
+    public function user()
+    {
+        return $table->belongsTo('App\User');
+    }
 
     public function getByLimit(int $limit_count = 10)
     {
