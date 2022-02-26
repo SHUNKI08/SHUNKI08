@@ -36,19 +36,16 @@
             <img class="image_path" src="https://stocoock.s3.ap-northeast-1.amazonaws.com/{{ $post->image_path }}">
             <h2 class="name">{{ $post->name }}</h2>
             <h4 class="materials">{{ $post->materials }}</h4>
-            <a class="recipe">{{$post->recipe }}</a>
-            <br>
-            <a class="created_at">{{ $post->created_at }}</a>
-            <br>
+
             <!--削除ボタン / 検索ボタン-->
-            <ui class="buttons">
+            <!--<ui class="buttons">
                <li><form action="/posts/{{ $post->id }}" id="form_{{ $post->id }}" method="post" style="display:inline">
                     @csrf
                     @method('DELETE')
                     <button class="delet_button" type="submit">delete</button>
                 </form></li>
                 <li><button class="search">検索</button></li>
-            </ui>            
+            </ui> -->           
         </div>
         <br>
     @endforeach

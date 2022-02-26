@@ -18,6 +18,7 @@ Route::delete('/stocks/{stock}', 'StocksController@delete');
 
 //posts検索機能
 Route::get('/postlist','FormController@postlist');
+Route::get('/postlist','FormController@search');
 
 //posts関係
 Route::get('/posts', 'PostsController@postList');
@@ -27,6 +28,7 @@ Route::delete('/posts/{post}', 'PostsController@delete');
 //user関連
 //ユーザーページ表示
 Route::get('/user', 'UsersController@mypage');
+//Route::get('/user', 'PostsController@yourPost');
 
 Auth::routes();
 

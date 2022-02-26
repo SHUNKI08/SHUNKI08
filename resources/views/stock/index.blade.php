@@ -5,7 +5,7 @@
 <span class="stocksHeader">
     <h1 class='yourStocks'>Your Stocks</h1>
     
-    <!--ストック追加ポップアップ-->
+<!--ストック追加ポップアップ-->
     <label class="stockRegister">
         <img class="reg__png"src="/images/stockRegister.png">
         <input type="checkbox"name="checkbox">
@@ -24,13 +24,24 @@
 </span>
 
 
-<!--【仮設置】材料検索フォーム-->
-<h4>レシピ検索 (任意の材料を指定してください。)</h4>
-<form method="GET" action="/postlist"> <!--postlistへ材料名を飛ばす-->
-    @csrf
-    <input type="text" name="material">
-    <input type="submit" value="検索">
-</form>
+<!--検索フォームポップアップ-->
+    <label class="stockSearch">
+        <img class="src__png"src="/images/icon_search.png">
+        <input type="checkbox"name="checkbox">
+        <div id="popup">
+            <form action="/postlist" method="GET">
+                @csrf
+                <label class="explain">検索したい材料を入力してください。</label>
+                <div class="name_form">
+                    <input class="name_form_bar"type="text" name="material">
+                    <input type="submit" value="検索">
+                </div>
+            </form>
+            <a class="cta" href="/"><button class="back">close</button></a>
+        </div>
+    </label>
+</span>
+
 
 
 <!--Stock一覧表示-->
@@ -43,12 +54,17 @@
             
             <!--削除ボタン / 検索ボタン-->
             <ui class="buttons">
-               <li><form action="/stocks/{{ $stock->id }}" id="form_{{ $stock->id }}" method="post" style="display:inline">
-                    @csrf
-                    @method('DELETE')
-                    <button class="delet_button" type="submit">delete</button>
-                </form></li>
-                <li><button class="search">検索</button></li>
+               <li>
+                   <form action="/stocks/{{ $stock->id }}" id="form_{{ $stock->id }}" method="post">
+                        @csrf
+                        @method('DELETE')
+                        <button class="delet_button" type="submit">削除</button>
+                    </form>
+                </li>
+                
+                <form action="/postlist" method="GET">
+                    <li><button class="search" value="{{ $stock->name }}" name="search">検索</button></li>
+                </form>
             </ui>
         </div>
         <br>

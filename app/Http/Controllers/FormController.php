@@ -33,4 +33,11 @@ class FormController extends Controller
         return view('stock.postlist', compact('item'))->with('items',$item)->with('material',$material);
         //一覧のpostlist.blade.phpを表示させる時に$itemに格納された結果と検索ワードを渡す
     }
+    
+    public function search(Request $request)
+    {
+        $stock = FormRequest::get('search');
+        $item = Form::where('materials','LIKE',"%" .$stock. "%")->get();
+        return view('stock.postlist', compact('item'))->with('items',$item)->with('material',$stock);
+    }
 }
