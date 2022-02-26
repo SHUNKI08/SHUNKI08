@@ -38,43 +38,15 @@ class PostsController extends Controller
         return redirect('/posts');
     }
     
-    public function posts(Post $post)
+    public function yourPost(Post $post)
     {
-        return view('stock/posts')->with(['post' => $post->get()]);
-    }
-    
-    /*    public function image_post(Request $request, Post $post)
-    {
-        $post = new Post;
-        $form = $request->all();
         
-        //s3アップロード開始
-        $image = $request->file('image_path');
-        // バケットの`myprefix`フォルダへアップロード
-        $path = Storage::disk('s3')->putFile('post_image', $image, 'public');
-        // アップロードした画像のフルパスを取得
-        $post->image_path = Storage::disk('s3')->url($path);
-    
-        $post->save();
-    
-        return redirect('stock/posts');
+        $user_id = Auth::id();
+        $post = Post::where('user_id',$user_id)->get();
+        
+        return view('stock/user')->with(['posts' => $post]);
     }
-    */
-
     
-    /*
-    public function search(Post $post)
-    {
-        //キーワード取得
-        $keyword = $request->input('keyword', '');//デフォルトは空文字
-        //キーワード検索
-        $posts = Post::where('materials',"%{$keyword}%")->get()->all();
-        //ページ更新時にクリエパラメータが消えないようにkeywordも渡す
-        $params = array('posts' -> $posts,
-                        'keyword'=> $keyword);
-        return view('stock/posts',$params);
-    }
-    */
 }
 
 ?>

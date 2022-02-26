@@ -14,8 +14,6 @@ class UsersController extends Controller
         $user = Auth::user();
         return view('stock.user', compact('user'));
     }
-    
-    
         
 }
 
