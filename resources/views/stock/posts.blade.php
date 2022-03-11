@@ -32,10 +32,12 @@
 <div class="posts">
 
     @foreach ($posts as $post)
+    <label>
         <div class="post">
             <img class="image_path" src="https://stocoock.s3.ap-northeast-1.amazonaws.com/{{ $post->image_path }}">
             <h2 class="name">{{ $post->name }}</h2>
             <h4 class="materials">{{ $post->materials }}</h4>
+            <a href="/posts/{{ $post->id }}">レシピを見る</a>
 
             <!--削除ボタン / 検索ボタン-->
             <!--<ui class="buttons">
@@ -47,7 +49,8 @@
                 <li><button class="search">検索</button></li>
             </ui> -->           
         </div>
-        <br>
+    </label>    
+    <br>
     @endforeach
     
 </div>

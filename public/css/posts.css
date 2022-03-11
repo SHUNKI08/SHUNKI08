@@ -67,7 +67,7 @@
     position:absolute;
     top:8vh;
     left:30vw;
-    width:70px;
+    width:65px;
     cursor: pointer;
 }
 
@@ -114,7 +114,7 @@
 }
 
 #popup{
-    z-index:3;
+    z-index:999;
     position:fixed;
     top: 30%;
     left: 50%;
@@ -153,4 +153,23 @@ input[type="checkbox"]{
 
 input[type="checkbox"]:checked + #popup{
     display:block;
+}
+
+.post_checkbox{
+    cursor:pointer;
+}
+
+.pop_post{
+    display: none;
+}
+
+.pop_box{
+    width:500px;
+    height:600px;
+    background-color: white;
+}
+
+.pop_image_path{
+    z-index: 999;
+    width:300px;
 }

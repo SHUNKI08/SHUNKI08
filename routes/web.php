@@ -23,12 +23,18 @@ Route::get('/postlist','FormController@search');
 //posts関係
 Route::get('/posts', 'PostsController@postList');
 Route::post('/posts', 'PostsController@store');
-Route::delete('/posts/{post}', 'PostsController@delete');
+Route::get('/posts/{post}', 'PostsController@show');
 
 //user関連
 //ユーザーページ表示
 Route::get('/user', 'UsersController@mypage');
-//Route::get('/user', 'PostsController@yourPost');
+Route::post('/user', 'UsersController@store');
+Route::put('/user', 'UsersController@update');
+Route::get('/posts/{post}/edit','PostsController@edit');
+Route::put('/posts/{post}','PostsController@update');
+Route::delete('/posts/{post}', 'PostsController@delete');
+
+
 
 Auth::routes();
 
