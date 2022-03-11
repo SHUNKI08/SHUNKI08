@@ -20,7 +20,7 @@
     position:absolute;
     top:8vh;
     left:30vw;
-    width:70px;
+    width:65px;
     cursor: pointer;
 }
 
@@ -28,7 +28,7 @@
     position:absolute;
     top:8vh;
     left:35vw;
-    width:70px;
+    width:65px;
     cursor: pointer;
 }
 
@@ -56,22 +56,37 @@
 }
 
 .created_at{
+    position:relative;
     font-size:small;
-    margin:0;
+    top:-20%;
     margin-left: 30px;
 }
 
-.delet_button{
-    margin-right: 0;
-}
-
-
-
 .buttons{
+    position: relative;
     display:inline-flex;
-    padding: 0px 20px;
+    flex-wrap:wrap;
+    top:-20%;
 }
 
+.delete_button{
+    position:relative;
+    border: none;
+    background: transparent;
+}
+
+.search_button{
+    position: relative;
+    border: none;
+    background: transparent;
+}
+
+
+.one_buttons{
+    width:30px;
+    display: block;
+    cursor: pointer;
+}
 
 /*-----------ポップアップ------------*/
 .explain{

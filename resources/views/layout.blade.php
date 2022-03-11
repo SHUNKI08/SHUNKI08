@@ -16,10 +16,10 @@
             @include('header')
         </header>
         
-        
         <div class="container">
             @yield('content')
         </div>
+        
         <footer>
             @include('footer')
         </footer>

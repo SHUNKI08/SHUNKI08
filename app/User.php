@@ -14,7 +14,7 @@ class User extends Authenticatable
     protected $table = 'stocoock.users';
     
     protected $fillable = [
-        'name', 'email', 'password',
+        'name', 'email', 'password','user_icon'
     ];
     
     //リレーションの設定 投稿者は複数の投稿とストックを持つ。

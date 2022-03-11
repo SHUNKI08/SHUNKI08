@@ -14,7 +14,7 @@ li, .nav__a, .nav__b, .nav__c, .content{
 header{
     position:fixed;
     z-index:2;
-    width:100%;
+    width:100vw;
     height:50px;
     top:0%;
     background-color:white;
@@ -41,6 +41,7 @@ header{
 }
 
 .nav__links li .nav__a, .nav__b, .nav__c, .nav__button,.user{
+    width:auto;
     font-weight: bolder;
     transition: all 0.3s ease 0s;
 }
@@ -70,14 +71,13 @@ header{
 
 /*----------BODY----------*/
 body{
-    height: auto;
-    margin:0;
-    padding:0;
+    
 }
 
 .container{
+    width:100vw;
     z-index:0;
-    padding: 3% 10% 0 10%;
+    padding: 3% 0;
     position:relative;
     line-height: 1;
     background-color:whitesmoke;
@@ -91,7 +91,7 @@ footer{
     position:static;
     bottom:0;
     width:100%;
-    height:20px;
+    max-height:20px;
     background:white;
     border-top:1px solid;
     border-top-color:#d3d3d3;

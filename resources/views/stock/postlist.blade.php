@@ -8,14 +8,12 @@
 <div class="posts">
 
     @foreach ($items as $item)
+    
         <div class="post">
             <img class="image_path" src="https://stocoock.s3.ap-northeast-1.amazonaws.com/{{ $item->image_path }}">
             <h2 class="name">{{ $item->name }}</h2>
             <h4 class="materials">{{ $item->materials }}</h4>
-            <a class="recipe">{{$item->recipe }}</a>
-            <br>
-            <a class="created_at">{{ $item->created_at }}</a>
-                </form>
+            <a href="/posts/{{ $item->id }}">レシピを見る</a>
         </div>
     @endforeach
     

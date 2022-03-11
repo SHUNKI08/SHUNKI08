@@ -51,20 +51,20 @@
         <div class='stock'>
             <h2 class='name'>{{ $stock->name }}</h2>
             <a class='created_at'>{{ $stock->created_at }}</a>
-            
             <!--削除ボタン / 検索ボタン-->
             <ui class="buttons">
-               <li>
+                <li>
                    <form action="/stocks/{{ $stock->id }}" id="form_{{ $stock->id }}" method="post">
                         @csrf
                         @method('DELETE')
-                        <button class="delet_button" type="submit">削除</button>
+                        <button class="delete_button" type="submit"><img class=one_buttons src="images/delete.png" alt="削除"/></button>
                     </form>
                 </li>
-                
-                <form action="/postlist" method="GET">
-                    <li><button class="search" value="{{ $stock->name }}" name="search">検索</button></li>
-                </form>
+                <li>
+                    <form action="/postlist" method="GET">
+                        <button class="search_button" value="{{ $stock->name }}" name="search"><img class=one_buttons src="images/icon_search.png" alt="検索"/></button>
+                    </form>
+                </li>
             </ui>
         </div>
         <br>

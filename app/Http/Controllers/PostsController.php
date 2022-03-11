@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Post;
 use Illuminate\Http\Request;
+use App\Http\Requests\PostRequest;
 use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Facades\Auth;
 
@@ -38,6 +39,13 @@ class PostsController extends Controller
         return redirect('/posts');
     }
     
+    public function show(Post $post)
+    {
+        return view('stock/show')->with(['post' => $post]);
+    }    
+
+    //user関連
+    //自分の投稿表示
     public function yourPost(Post $post)
     {
         
@@ -47,6 +55,19 @@ class PostsController extends Controller
         return view('stock/user')->with(['posts' => $post]);
     }
     
+    public function edit(Post $post)
+    {
+        return view('stock/edit')->with(['post' => $post]);
+    }
+    
+    public function update(Request $request, Post $post)
+    {
+        $input_post = $request['post'];
+        $post->fill($input_post)->save();
+    
+        return redirect('/user');
+    }
+
 }
 
 ?>
