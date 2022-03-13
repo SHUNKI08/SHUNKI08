@@ -10,8 +10,8 @@
 /*---------posts情報表示---------*/
 .posts{
     position : relative;
+    width:auto;
     left: 8%;
-    background-color: whitesmoke;
     display: inline-flex;
     flex-wrap:wrap;
 }
