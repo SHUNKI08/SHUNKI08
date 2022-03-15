@@ -1,0 +1,117 @@
+
+
+.base{
+    width:70%;
+    background-color: white;
+    margin:3%;
+    padding:2%;
+    border-radius: 7px;
+}
+
+.icon_base{
+    margin:0 10%;
+    flex-direction: row;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.user_icon_null, .user_icon{
+    width:15%;
+    left:100px;
+    margin:0 10%;
+    border:1px solid rgba(0,0,0, .30);
+    border-radius: 100%;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, .22);
+}
+
+.user_icon_form{
+    
+}
+
+.border{
+    border-bottom:3px solid whitesmoke;
+    margin:2% 0 2% 0  ;
+}
+
+
+/*--------email更新POPUP---------*/
+.email_address{
+    margin:1% 0;
+}
+
+input[type="checkbox"]{
+    display:none;
+}
+
+input[type="checkbox"]:checked + #popup{
+    display: block;
+}
+
+.email_update{
+    cursor:pointer;
+}
+
+#popup{
+    width:auto;
+    height:auto;
+    padding:5%;
+    border-radius: 5px;
+    border:1px solid rgba(0, 0, 0, .10);
+    box-shadow:1px 1.5px 1.5px rgba(0, 0, 0, .22);
+    background-color:white;
+    display: none;
+    position: fixed;
+    top:50%;
+    left:50%;
+}
+
+label{
+    display: block;
+}
+
+
+/*---------posts情報表示---------*/
+.your_posts{
+    width:70%;
+    background-color: white;
+    margin:3%;
+    padding:2%;
+    border-radius: 7px;
+}
+
+.posts{
+    position : relative;
+    width:100vw;
+    display: inline-flex;
+    flex-wrap:wrap;
+}
+
+.post{
+    display:grid;
+    grid-template-rows:auto 1fr auto;
+    grid-template-columns:1fr;
+    background-color: whitesmoke;
+    position: relative;
+    width:10vw;
+    height:auto;
+    z-index:3;
+    border-radius: 5px;
+    box-shadow: 1px 1.5px 2px rgba(0,0,0, .22);
+    padding:1%;
+    margin:0;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+.image_path{
+    grid-area:1/1/2/2;
+    width:100%;
+    border-radius: 2%;
+}
+
+.name{
+    grid-area:2/1/3/2;
+    margin:10% 0;
+    margin-bottom:10px;
+}

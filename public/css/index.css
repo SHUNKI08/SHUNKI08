@@ -1,0 +1,197 @@
+/*BODY*/
+.container{
+    height:650px;
+}
+
+.stocksHeader{
+    
+}
+
+.title_png{
+}
+
+.yourStocks{
+    position:relative;
+    left:5%;
+    margin:2% 0;
+    width:auto;
+}
+
+.reg__png{
+    position:absolute;
+    top:8vh;
+    left:30vw;
+    width:65px;
+    cursor: pointer;
+}
+
+.src__png{
+    position:absolute;
+    top:8vh;
+    left:35vw;
+    width:65px;
+    cursor: pointer;
+}
+
+/*---------ストック情報表示---------*/
+.stocks{
+    position : relative;
+    background-color: whitesmoke;
+}
+
+.stock{
+    display: grid;
+    grid-template-rows:auto auto;
+    grid-template-columns:60% 20% 20%;
+    background-color: white;
+    margin-left: 8%;
+    padding:0.1%;
+    width:30%;
+    height:10%;
+    z-index:2;
+    border-radius: 5px;
+    box-shadow: 1px 1.5px 2px rgba(0,0,0, .22);
+}
+
+.name{
+    grid-area:1/1/2/4;
+    padding:1% 0 1% 1%;
+    font-weight: bold;
+    margin:0;
+    margin-left: 20px;
+}
+
+.created_at{
+    grid-area:2/1/3/2;
+    position:relative;
+    font-size:small;
+    margin-left: 30px;
+    top:50%;
+}
+
+.buttons{
+    grid-area:2/2/3/4;
+    display:inline-flex;
+    flex-wrap:wrap;
+}
+
+.delete_button{
+    position:relative;
+    border: none;
+    background: transparent;
+}
+
+.search_button{
+    position: relative;
+    border: none;
+    background: transparent;
+}
+
+
+.one_buttons{
+    width:30px;
+    display: block;
+    cursor: pointer;
+}
+
+/*-----------ポップアップ------------*/
+.explain{
+    position:absolute;
+    padding:0;
+    margin:0;
+    width:300;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.name_form{
+    padding:0;
+    position: absolute;
+    top:50%;
+    left:25%;
+    display: inline;
+}
+
+.cta{
+    font-size:70%;
+    color:black;
+    text-decoration: none;
+    position:fixed;
+    top:10;
+    right: 10;
+}
+
+.back{
+    position: absolute;
+    top:0;
+    background:black;
+    border-radius: 0;
+    color:white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#popup{
+    z-index:3;
+    position:fixed;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width:400px;
+    height :120px;
+    padding: 0px;
+    background: #fff;
+    box-shadow: 0 5px 30px rgba(0,0,0,.30);
+    display:none;
+}
+
+
+label{
+    display:block;
+}
+
+label span{
+    display: block;
+    background:#FF8856;
+    color:#fff;
+    width:50px;
+    height:50px;
+    line-height: 50px;
+    border-radius: 5%;
+    text-align:center;
+}
+
+label span:hover{
+    cursor:pointer;
+}
+
+input[type="checkbox"]{
+    display: none;
+}
+
+input[type="checkbox"]:checked + #popup{
+    display:block;
+}
+
+/*--------------------------------------------------------*/
+
+/*---------BODY_POSTS----------*/
+.body_posts{
+    position: absolute;
+    top:70px;
+    right:5%;
+    background:white;
+    width:350px;
+    border-radius: 20px;
+    box-shadow: 1px 1.5px 2px rgba(0,0,0, .22);
+}
+
+.body_posts_style{
+    padding:0.5em 1em;
+}
+
+.body_posts_title{
+    border-bottom:3px solid whitesmoke;
+}
+

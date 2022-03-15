@@ -1,0 +1,105 @@
+
+html{
+    
+}
+
+body{
+}
+
+/*Navigation Bar*/
+header{
+    position:fixed;
+    z-index:2;
+    width:100vw;
+    height:50px;
+    top:0%;
+    background-color:white;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    border-bottom:1px solid;
+    border-bottom-color:#d3d3d3;
+}
+
+.logo_link{
+    position:absolute;
+    left:0%;
+}
+
+li, .nav__a, .nav__b, .nav__c, .content{
+    font-weight:500;
+    font-size: 16px;
+    color: black;
+    text-decoration: none;
+}
+
+.logo{
+    width:180px;
+    height:50px;
+    padding:0 0 0 200px;
+}
+
+.nav__links{
+    list-style:none;
+}
+
+.nav__links, li{
+    display:inline-block;
+    padding: 0px 20px;
+}
+
+.nav__links li .nav__a, .nav__b, .nav__c, .nav__button,.user{
+    width:auto;
+    font-weight: bolder;
+    transition: all 0.3s ease 0s;
+}
+
+.nav__links li .nav__a:hover, .nav__b:hover, .nav__c:hover, .nav__button:hover{
+    color: #0088a9;
+}
+
+.user{
+    margin-left: 20px;
+    margin-right: 5vw;
+    padding:9px 25px;
+    background-color: rgba(0,136,169,1);
+    border:none;
+    border-radius: 50px;
+    cursor:pointer;
+    transition: all 0.3s ease 0s;
+}
+
+.user:hover{
+    background-color: rgba(0,136,169,0.8);
+    color:white;
+}
+
+/*--------------------------------------------------------*/
+
+
+/*----------CONTAINER----------*/
+.container{
+    padding: 3% 0;
+    line-height: 1;
+    background-color:whitesmoke;
+}
+/*--------------------------------------------------------*/
+
+
+/*----------FOOTER----------*/
+footer{
+    z-index:3;
+    position:static;
+    bottom:0;
+    width:100%;
+    max-height:20px;
+    background:white;
+    border-top:1px solid;
+    border-top-color:#d3d3d3;
+    align-items:center;
+}
+
+.footer_text{
+    text-align:center;
+    padding:2vh 0;
+}

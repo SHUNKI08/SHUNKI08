@@ -1,0 +1,175 @@
+.PostsList{
+    position:relative;
+    height:80px;
+    top:25px;
+    left:5%;
+    margin:0;
+    margin-bottom: 10px;
+}
+
+/*---------posts情報表示---------*/
+.posts{
+    position : relative;
+    width:auto;
+    left: 8%;
+    display: inline-flex;
+    flex-wrap:wrap;
+}
+
+.post{
+    position: relative;
+    background-color: white;
+    width:300px;
+    z-index:2;
+    border-radius: 5px;
+    box-shadow: 1px 1.5px 2px rgba(0,0,0, .22);
+    padding:1.5%;
+    margin:0;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+.image_path{
+    position:relative;
+    width:100%;
+    border-radius: 2%;
+}
+
+.name{
+    margin:0;
+    margin-bottom:10px;
+}
+
+.materials{
+    margin:0;
+    margin-bottom:10px;
+}
+
+.recipe{
+    white-space: pre-wrap;
+    margin-bottom: 10px;
+    line-height: 1.5em;
+}
+
+.created_at{
+    text-align: right;
+    margin:0;
+    margin-bottom:10px;
+}
+
+
+/*---------POPUP----------*/
+.postsHeader{
+    display:inline;
+}
+
+.reg__png{
+    position:absolute;
+    top:8vh;
+    left:30vw;
+    width:65px;
+    cursor: pointer;
+}
+
+.explain{
+    position:relative;
+    padding:0;
+    margin:0 0 1% 0;
+    width:100%;
+    text-align:center;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.name_form{
+}
+
+.materials_form{
+    
+    
+}
+
+.recipe_form{
+    
+}
+
+.cta{
+    font-size:70%;
+    color:black;
+    text-decoration: none;
+    position:fixed;
+    top:10;
+    right:10;
+}
+
+.back{
+    position: absolute;
+    top:0;
+    background:black;
+    border-radius: 0;
+    color:white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#popup{
+    z-index:999;
+    position:fixed;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width:600px;
+    height :220px;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0 5px 30px rgba(0,0,0,.30);
+    display:none;
+}
+
+
+label{
+    display:block;
+}
+
+label span{
+    display: block;
+    background:#FF8856;
+    color:#fff;
+    width:50px;
+    height:50px;
+    line-height: 50px;
+    border-radius: 5%;
+    text-align:center;
+}
+
+label span:hover{
+    cursor:pointer;
+}
+
+input[type="checkbox"]{
+    display: none;
+}
+
+input[type="checkbox"]:checked + #popup{
+    display:block;
+}
+
+.post_checkbox{
+    cursor:pointer;
+}
+
+.pop_post{
+    display: none;
+}
+
+.pop_box{
+    width:500px;
+    height:600px;
+    background-color: white;
+}
+
+.pop_image_path{
+    z-index: 999;
+    width:300px;
+}
