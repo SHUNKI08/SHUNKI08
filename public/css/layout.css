@@ -1,16 +1,12 @@
+
+html{
+    
+}
+
+body{
+}
+
 /*Navigation Bar*/
-.logo_link{
-    position:absolute;
-    left:0%;
-}
-
-li, .nav__a, .nav__b, .nav__c, .content{
-    font-weight:500;
-    font-size: 16px;
-    color: black;
-    text-decoration: none;
-}
-
 header{
     position:fixed;
     z-index:2;
@@ -23,6 +19,18 @@ header{
     align-items: center;
     border-bottom:1px solid;
     border-bottom-color:#d3d3d3;
+}
+
+.logo_link{
+    position:absolute;
+    left:0%;
+}
+
+li, .nav__a, .nav__b, .nav__c, .content{
+    font-weight:500;
+    font-size: 16px;
+    color: black;
+    text-decoration: none;
 }
 
 .logo{
@@ -52,7 +60,7 @@ header{
 
 .user{
     margin-left: 20px;
-    margin-right: 200px;
+    margin-right: 5vw;
     padding:9px 25px;
     background-color: rgba(0,136,169,1);
     border:none;
@@ -69,16 +77,9 @@ header{
 /*--------------------------------------------------------*/
 
 
-/*----------BODY----------*/
-body{
-    
-}
-
+/*----------CONTAINER----------*/
 .container{
-    width:100vw;
-    z-index:0;
     padding: 3% 0;
-    position:relative;
     line-height: 1;
     background-color:whitesmoke;
 }
@@ -95,10 +96,10 @@ footer{
     background:white;
     border-top:1px solid;
     border-top-color:#d3d3d3;
-    padding:2vh;
     align-items:center;
 }
 
 .footer_text{
     text-align:center;
+    padding:2vh 0;
 }
