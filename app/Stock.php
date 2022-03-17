@@ -10,7 +10,7 @@ class Stock extends Model
     use SoftDeletes;
     
     //テーブル名
-    protected $table = 'stocoock.stocks';
+    protected $table = 'stocks';
     
     //可変項目
     protected $fillable =[

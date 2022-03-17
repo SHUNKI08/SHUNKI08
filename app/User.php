@@ -11,7 +11,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class User extends Authenticatable
 {
-    protected $table = 'stocoock.users';
+    protected $table = 'users';
     
     protected $fillable = [
         'name', 'email', 'password','user_icon'
