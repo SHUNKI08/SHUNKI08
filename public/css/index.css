@@ -6,8 +6,9 @@
 .yourStocks{
     position:relative;
     left:5%;
+    top:1%;
     width:50%;
-    height:100%;
+    height:10%;
 }
 
 .reg__png{

@@ -1,16 +1,15 @@
 .PostsList{
     position:relative;
-    height:80px;
-    top:25px;
     left:5%;
-    margin:0;
-    margin-bottom: 10px;
+    top:1%;
+    width:50%;
+    height:10%;
 }
 
 /*---------posts情報表示---------*/
 .posts{
     position : relative;
-    width:auto;
+    width:90%;
     left: 8%;
     display: inline-flex;
     flex-wrap:wrap;
