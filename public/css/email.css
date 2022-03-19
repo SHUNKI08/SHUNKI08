@@ -1,0 +1,42 @@
+.container{
+    padding:5% 10% 14% 10%;
+}
+
+.card-base{
+    margin:auto;
+    width:30%;
+    height:50%;
+    padding: 2% 3% 2% 3%;
+    border-radius: 5px;
+    background-color:white;
+    border:solid 1px rgba(0,0,0, .25);
+    box-shadow: 1px 1px 2px rgba(0,0,0, .22);
+}
+
+.card-header{
+    text-align: center;
+    font-weight: bolder;
+}
+
+.border{
+    border-bottom:3px solid whitesmoke;
+    margin:2% 0 6% 0  ;
+}
+
+input{
+    width:100%;
+    border:none;
+    outline:none;
+    background:none;
+    border-bottom :2px solid #adadad;
+    margin:1% 0 5% 0;
+}
+
+button{
+    width:100%;
+    padding:2% 0;
+    background-color: orange;
+    border:none;
+    cursor: pointer;
+    margin:0 0 4% 0;
+}

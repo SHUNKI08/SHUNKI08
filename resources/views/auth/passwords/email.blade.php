@@ -1,11 +1,11 @@
-@extends('layouts.app')
-
+@extends('layout')
+@section('title','Reset')
 @section('content')
 <div class="container">
-    <div class="row justify-content-center">
-        <div class="col-md-8">
-            <div class="card">
+            <div class="card-base">
                 <div class="card-header">{{ __('Reset Password') }}</div>
+                
+                <div class="border"></div>
 
                 <div class="card-body">
                     @if (session('status'))
@@ -41,7 +41,9 @@
                     </form>
                 </div>
             </div>
-        </div>
-    </div>
 </div>
+
+<!-- CSS , Java Script -->
+<link href="/css/email.css" rel="stylesheet">
+<script src="js/main.js"></script>
 @endsection
