@@ -11,6 +11,7 @@
         <script src="js/main.js"></script>        
     </head>
     <body>
+        
         <!--Navigation Bar-->
         <header>
             @include('header')
@@ -20,8 +21,9 @@
             @yield('content')
         </div>
         
-        <footer>
+        <div class="footer">
             @include('footer')
-        </footer>
+        </div>
+        
     </body>
 </html>
