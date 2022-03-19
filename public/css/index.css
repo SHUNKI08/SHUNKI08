@@ -3,18 +3,12 @@
     height:650px;
 }
 
-.stocksHeader{
-    
-}
-
-.title_png{
-}
-
 .yourStocks{
     position:relative;
     left:5%;
-    margin:2% 0;
-    width:auto;
+    top:1%;
+    width:50%;
+    height:10%;
 }
 
 .reg__png{
