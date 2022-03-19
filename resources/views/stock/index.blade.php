@@ -2,7 +2,6 @@
 @section('title','Stocoock')
 
 @section('content')
-<span class="stocksHeader">
     <h1 class='yourStocks'>Your Stocks</h1>
     
 <!--ストック追加ポップアップ-->
@@ -21,7 +20,6 @@
             <a class="cta" href="/"><button class="back">close</button></a>
         </div>
     </label>
-</span>
 
 
 <!--検索フォームポップアップ-->
