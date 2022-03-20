@@ -1,3 +1,17 @@
+## stocoockについて
+
+stocoockは日々の献立考案をサポートするサービスです。冷蔵庫の中身を登録し、使用したい食材を選んで検索すると献立が表示されます。
+
+## 献立を投稿してみよう
+献立を投稿することも可能です。他ユーザーさんに献立アイデアを提供してみましょう。
+
+## testアカウントを用意
+アプリケーション紹介にあたり、tesuユーザーを用意しています。以下の条件でログインしてください。
+email : test01@mail.com
+password : testtest
+
+
+
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
 
 <p align="center">
