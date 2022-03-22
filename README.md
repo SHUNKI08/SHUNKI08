@@ -1,19 +1,40 @@
-<img src="https://raw.githubusercontent.com/SHUNKI08/stocoock/master/public/images/nav__logo.png" alt="Logo" width="50%">
+<img src="https://raw.githubusercontent.com/SHUNKI08/stocoock/master/public/images/nav__logo.png" alt="Logo" width="50%" align="center">
 
 ## stocoockについて
+stocoockは日々の献立考案をサポートするサービスです。冷蔵庫内の食材を登録し、使用したい食材を選んで検索すると献立が表示されます。
 
-stocoockは日々の献立考案をサポートするサービスです。冷蔵庫の中身を登録し、使用したい食材を選んで検索すると献立が表示されます。
+### 冷蔵庫内の食材を登録しよう
+冷蔵庫内の食材を登録することで、今スグに調理できる献立
 
-## 献立を投稿してみよう
-献立を投稿することも可能です。他ユーザーさんに献立アイデアを提供してみましょう。
+### 献立を投稿してみよう
+献立を投稿することも可能です。他ユーザーに献立アイデアを提供してみましょう。
+
+## 利用方法
+[コチラ](https://stocoock.herokuapp.com/)からご利用ください。クラウドアプリケーション環境にはHerokuを用いています。
 
 ## testアカウントを用意
-アプリケーション紹介にあたり、tesuユーザーを用意しています。以下の条件でログインしてください。
-email : test01@mail.com
-password : testtest
+アプリケーション紹介用として、testユーザーを用意しています。以下の条件でログインしてください。
+- email : test01@mail.com
+- password : testtest]
 
+## 開発環境
+- PHP 8.0.14 
+- Framework : Laravel
+- IDE : Cloud9
 
+### ライセンス
 
+The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+
+## 製作者
+- 古賀駿輝 ( email : thinkline000@gmail.com )
+- GitHub : https://github.com/SHUNKI08/stocoock
+- Heroku : https://dashboard.heroku.com/apps/stocoock
+
+##今後の開発予定
+- モバイル版ビューを製作
+
+//
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
 
 <p align="center">
@@ -89,6 +110,7 @@ In order to ensure that the Laravel community is welcoming to all, please review
 
 If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
 
-## License
+### License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+//
