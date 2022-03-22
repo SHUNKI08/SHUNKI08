@@ -1,4 +1,4 @@
-<umg src="images/nav__logo.png" alt="Logo">
+<umg src="https://github.com/SHUNKI08/stocoockimages/nav__logo.png" alt="Logo">
 
 ## stocoockについて
 
