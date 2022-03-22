@@ -1,3 +1,5 @@
+<umg src="images/nav__logo.png" alt="Logo">
+
 ## stocoockについて
 
 stocoockは日々の献立考案をサポートするサービスです。冷蔵庫の中身を登録し、使用したい食材を選んで検索すると献立が表示されます。
