@@ -1,4 +1,4 @@
-<img src="https://raw.githubusercontent.com/SHUNKI08/stocoock/master/public/images/nav__logo.png" alt="Logo">
+<img src="https://raw.githubusercontent.com/SHUNKI08/stocoock/master/public/images/nav__logo.png" alt="Logo" width="50%>
 
 ## stocoockについて
 
