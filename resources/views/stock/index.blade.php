@@ -96,12 +96,14 @@
 <script src="js/main.js"></script>
 @endguest
 
+
 @auth
-    <span class="stocksHeader">
-        <h1 class='yourStocks'>Your Stocks</h1>
+    
+    <div class="grid_base">
+        <h1 class='grid_YourStocks'>Your Stocks</h1>
         
-    <!--ストック追加ポップアップ-->
-        <label class="stockRegister">
+            <!--ストック追加ポップアップ-->
+        <label class="grid_reg">
             <img class="reg__png"src="/images/stockRegister.png">
             <input type="checkbox"name="checkbox">
             <div id="popup">
@@ -118,7 +120,7 @@
         </label>
     
     <!--検索フォームポップアップ-->
-        <label class="stockSearch">
+        <label class="grid_src">
             <img class="src__png"src="/images/icon_search.png">
             <input type="checkbox"name="checkbox">
             <div id="popup">
@@ -133,26 +135,8 @@
                 <a class="cta" href="/"><button class="back">close</button></a>
             </div>
         </label>
-    
-    </span>
-    
-    
-    <!--検索フォームポップアップ-->
-        <label class="stockSearch">
-            <img class="src__png"src="/images/icon_search.png">
-            <input type="checkbox"name="checkbox">
-            <div id="popup">
-                <form action="/postlist" method="GET">
-                    @csrf
-                    <label class="explain">検索したい材料を入力してください。</label>
-                    <div class="name_form">
-                        <input class="name_form_bar"type="text" name="material">
-                        <input type="submit" value="検索">
-                    </div>
-                </form>
-                <a class="cta" href="/"><button class="back">close</button></a>
-            </div>
-        </label>
+        
+    </div>
     
     
     
