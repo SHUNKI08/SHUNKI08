@@ -17,6 +17,8 @@
                     </div>
                     
                     <div class="border"></div>
+                    
+                    <a class="home-link" href="/">HOME</a>
     
                     <div class="card-body">
                         <a class="logout-link" href="{{ route('logout') }}"

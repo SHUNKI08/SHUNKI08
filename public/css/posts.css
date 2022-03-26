@@ -1,9 +1,35 @@
-.PostsList{
-    position:relative;
-    left:5%;
-    top:1%;
-    width:50%;
-    height:10%;
+/*--------BODY--------*/
+.container{
+    margin:auto;
+
+}
+
+/*--------ページタイトル・POPUPボタン--------*/
+.grid_base{
+    margin:1% 0 1% 0;
+    padding-left:10%;
+    display: grid;
+    grid-template-columns:auto auto 1fr;
+    grid-template-rows: auto;
+    column-gap: 3%;
+}
+
+.grid_YourStocks{
+    grid-area:1/1/2/2;
+}
+
+.grid_reg{
+    grid-area:1/2/2/3;
+    margin:0 10% 0 0 ;
+}
+
+.grid_src{
+    grid-area:1/3/2/4
+}
+
+.reg__png{
+    width:65px;
+    cursor: pointer;
 }
 
 /*---------posts情報表示---------*/
@@ -57,17 +83,6 @@
 
 
 /*---------POPUP----------*/
-.postsHeader{
-    display:inline;
-}
-
-.reg__png{
-    position:absolute;
-    top:8vh;
-    left:30vw;
-    width:65px;
-    cursor: pointer;
-}
 
 .explain{
     position:relative;

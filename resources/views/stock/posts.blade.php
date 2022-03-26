@@ -2,32 +2,30 @@
 @section('title','Posts')
 
 @section('content')
-<span class="postsHeader">
-    <h1 class="PostsList">Posts List</h1>
-    <label>
-    <img class="reg__png"src="/images/stockRegister.png">
-    <input type="checkbox"name="checkbox">
-    
-        <div id="popup">
+
+<div class="grid_base">
+        <h1 class='grid_YourStocks'>Posts List</h1>
+        
+        <label class="grid_reg">
+            <img class="reg__png"src="/images/stockRegister.png">
+            <input type="checkbox"name="checkbox">
             
-            <form action="/posts" method="POST" enctype="multipart/form-data">
-                @csrf
-                <label class="explain">追加する投稿レシピの名前を入力してください。</label>
-                <input class="name_form"type="text" required name="post[name]" placeholder="名前"/>
-                <input class="materials_form"type="text" required name="post[materials]" placeholder="材料"/>
-                <textarea class="recipe_form"rows="10" cols="60" required name="post[recipe]" placeholder="レシピ"></textarea>
-                
-                <!-- 画像アップロードフォーム -->
-                <input type="file" required name="image">
-                {{ csrf_field() }}
-                
-                <input type="submit" value="登録"/>
-            </form>
-            
-            <a class="cta" href="/posts"><button class="back">close</button></a>
-        </div>
-    </label>
-</span>
+                <div id="popup">
+                    <form action="/posts" method="POST" enctype="multipart/form-data">
+                        @csrf
+                        <label class="explain">追加する投稿レシピの名前を入力してください。</label>
+                        <input class="name_form"type="text" required name="post[name]" placeholder="名前"/>
+                        <input class="materials_form"type="text" required name="post[materials]" placeholder="材料"/>
+                        <textarea class="recipe_form"rows="10" cols="60" required name="post[recipe]" placeholder="レシピ"></textarea>
+                        <!-- 画像アップロードフォーム -->
+                        <input type="file" required name="image">
+                        {{ csrf_field() }}
+                        <input type="submit" value="登録"/>
+                    </form>
+                    <a class="cta" href="/posts"><button class="back">close</button></a>
+                </div>
+        </label>        
+</div>
 
 <div class="posts">
 

@@ -16,11 +16,15 @@ Route::get('/', 'StocksController@stockList');
 Route::post('/', 'StocksController@store');
 Route::delete('/stocks/{stock}', 'StocksController@delete');
 
+
 //posts検索機能
 Route::get('/postlist','FormController@postlist');
 Route::get('/postlist','FormController@search');
 
 //posts関係
+
+//Route::get('/', 'StocksController@random');
+
 Route::get('/posts', 'PostsController@postList');
 Route::post('/posts', 'PostsController@store');
 Route::get('/posts/{post}', 'PostsController@show');

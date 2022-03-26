@@ -3,7 +3,7 @@
 .base{
     width:70%;
     background-color: white;
-    margin:3%;
+    margin:3% auto 2% auto;
     padding:2%;
     border-radius: 7px;
 }
@@ -75,14 +75,14 @@ label{
 .your_posts{
     width:70%;
     background-color: white;
-    margin:3%;
+    margin:auto;
     padding:2%;
     border-radius: 7px;
 }
 
 .posts{
     position : relative;
-    width:100vw;
+    width:100%;
     display: inline-flex;
     flex-wrap:wrap;
 }

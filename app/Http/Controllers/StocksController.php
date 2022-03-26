@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Stock;
+use App\Post;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 
@@ -37,6 +38,14 @@ class StocksController extends Controller
     {
         return view('stock/postlist',['items' => $item])->with(['stock' => $stock->get()]);
     }
+    
+    public function random(Post $post)
+    {
+        $post = Post::inRandomOrder()->get();
+        
+        return view('stock/index');
+    }
+
 }
 
 ?>
