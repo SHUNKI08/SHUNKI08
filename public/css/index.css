@@ -1,30 +1,40 @@
-/*BODY*/
+/*--------BODY--------*/
 .container{
+    padding-left: 5%;
 
 }
 
-.yourStocks{
-    position:relative;
-    left:5%;
-    top:1%;
-    width:50%;
-    height:10%;
+/*--------ページタイトル・POPUPボタン--------*/
+.grid_base{
+    margin:1% 0 0 0;
+    padding-left:5%;
+    display: grid;
+    grid-template-columns:auto auto auto 1fr;
+    grid-template-rows: auto;
+    column-gap: 3%;
+}
+
+.grid_YourStocks{
+    grid-area:1/1/2/2;
+}
+
+.grid_reg{
+    grid-area:1/2/2/3;
+    margin:0 10% 0 0 ;
+}
+
+.grid_src{
+    grid-area:1/3/2/4
 }
 
 .reg__png{
-    position:absolute;
-    top:8vh;
-    left:30vw;
     width:65px;
     cursor: pointer;
 }
 
 .src__png{
-    position:absolute;
-    top:8vh;
-    left:35vw;
     width:65px;
-    cursor: pointer;
+    cursor:pointer;
 }
 
 /*---------ストック情報表示---------*/
