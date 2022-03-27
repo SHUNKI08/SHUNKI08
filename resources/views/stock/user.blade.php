@@ -102,6 +102,20 @@
         <div class="border"></div>
         
         <h2>{{ $user->name }}</h2>
+        <label>
+            <span class="name_update">ユーザーネームを更新</span>
+            <input type="checkbox" name="checkbox">
+            
+            <div id="popup">
+                <form class="name_form" action="/user" method="POST">
+                    @csrf
+                    @method('PUT')
+                    <input type='text' class="name" name='name' value="{{ $user->name }}"/>
+                    <input type='submit' value="更新"/>
+                </form>
+                <a class="cta" href="/"><button class="back">close</button></a>
+            </div>
+        </label>
         
         <div class="icon_base">
             <!--ユーザーアイコン更新機能-->
@@ -139,6 +153,7 @@
                     <input type='text' class="email" name='email' value="{{ $user->email }}"/>
                     <input type='submit' value="更新"/>
                 </form>
+                <a class="cta" href="/"><button class="back">close</button></a>
             </div>
         </label>
         

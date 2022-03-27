@@ -94,7 +94,7 @@ li, .nav__a, .nav__b, .nav__c, .content{
     position:static;
     bottom:0;
     width:100%;
-    max-height:20px;
+    max-height:10vh;
     background:white;
     border-top:1px solid;
     border-top-color:#d3d3d3;

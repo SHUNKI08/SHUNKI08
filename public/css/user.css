@@ -34,11 +34,7 @@
     margin:2% 0 2% 0  ;
 }
 
-
-/*--------email更新POPUP---------*/
-.email_address{
-    margin:1% 0;
-}
+/*--------name更新POPUP---------*/
 
 input[type="checkbox"]{
     display:none;
@@ -46,22 +42,81 @@ input[type="checkbox"]{
 
 input[type="checkbox"]:checked + #popup{
     display: block;
+    margin:auto;
 }
 
-.email_update{
+.name_update{
     cursor:pointer;
 }
 
+.back{
+    margin:0 1% 1% 0;
+    position: absolute;
+    bottom:0;
+    right:0;
+    background:black;
+    border-radius: 0;
+    color:white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
 #popup{
-    width:auto;
-    height:auto;
+    margin:auto;
     padding:5%;
     border-radius: 5px;
     border:1px solid rgba(0, 0, 0, .10);
     box-shadow:1px 1.5px 1.5px rgba(0, 0, 0, .22);
     background-color:white;
     display: none;
-    position: fixed;
+    position: absolute;
+    transform: translate(-50% , -50%);
+    top:50%;
+    left:50%;
+}
+
+label{
+    display: block;
+}
+
+
+
+
+/*--------email更新POPUP---------*/
+.email_address{
+    margin:1% 0;
+}
+
+
+
+.email_update{
+    cursor:pointer;
+}
+
+.back{
+    margin:0 1% 1% 0;
+    position: absolute;
+    bottom:0;
+    right:0;
+    background:black;
+    border-radius: 0;
+    color:white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+#popup{
+    margin:auto;
+    padding:5%;
+    border-radius: 5px;
+    border:1px solid rgba(0, 0, 0, .10);
+    box-shadow:1px 1.5px 1.5px rgba(0, 0, 0, .22);
+    background-color:white;
+    display: none;
+    position: absolute;
+    transform: translate(-50% , -50%);
     top:50%;
     left:50%;
 }

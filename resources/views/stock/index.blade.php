@@ -169,13 +169,7 @@
     </div>
     
     
-    <!--画面右側に表示される、postsウィジェット-->
-    <div class="body_posts">
-        <div class="body_posts_style">
-            <h2 class="body_posts_title">Posts</h3>
-            <h3>contents</h3>
-        </div>         
-    </div>
+
 @endauth
 
 <!-- CSS , Java Script -->
