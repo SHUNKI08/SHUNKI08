@@ -1,21 +1,25 @@
 <p align="center"><img src="https://raw.githubusercontent.com/SHUNKI08/stocoock/master/public/images/nav__logo.png" alt="Logo" width="50%" ></p>
 
 ## stocoockについて
-stocoockは日々の献立考案をサポートするサービスです。冷蔵庫内の食材を登録し、使用したい食材を選んで検索すると献立が表示されます。
+[stocoock](https://stocoock.herokuapp.com/)は日々の献立考案をサポートするサービスです。冷蔵庫内の食材を登録し、使用したい食材を選んで検索すると献立が表示されます。
 
 ### 冷蔵庫内の食材を登録しよう
-冷蔵庫内の食材を登録することで、今スグに調理できる献立
+冷蔵庫内の食材を登録し、食材を管理できます。買い出しのメモにも活用できます。
+食材を選択して検索する事で、その食材を使用した献立を表示します。
 
 ### 献立を投稿してみよう
-献立を投稿することも可能です。他ユーザーに献立アイデアを提供してみましょう。
+SNS的な機能も搭載。献立を投稿することも可能です。他ユーザーに献立アイデアを提供してみましょう。
 
-## 利用方法
-[コチラ](https://stocoock.herokuapp.com/)からご利用ください。クラウドアプリケーション環境にはHerokuを用いています。
+### ユーザー情報について
+ユーザーネーム、ユーザーアイコン等、一般的な要素を登録可能です。
+
+## アプリケーション接続
+[コチラ](https://stocoock.herokuapp.com/)からご利用ください(テキスト上部のリンクと同じ)。クラウドアプリケーション環境にはHerokuを用いています。
 
 ## testアカウントを用意
 アプリケーション紹介用として、testユーザーを用意しています。以下の条件でログインしてください。
 - email : test01@mail.com
-- password : testtest]
+- password : testtest
 
 ## 開発環境
 - PHP 8.0.14 
@@ -27,8 +31,6 @@ The Laravel framework is open-sourced software licensed under the [MIT license](
 
 ## 製作者
 - 古賀駿輝 ( email : thinkline000@gmail.com )
-- GitHub : https://github.com/SHUNKI08/stocoock
-- Heroku : https://dashboard.heroku.com/apps/stocoock
 
 ## 今後の開発予定
 - モバイル版ビューを製作
