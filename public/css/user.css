@@ -1,7 +1,7 @@
 
 
 .base{
-    width:70%;
+    width:50%;
     background-color: white;
     margin:3% auto 2% auto;
     padding:2%;
@@ -128,7 +128,7 @@ label{
 
 /*---------posts情報表示---------*/
 .your_posts{
-    width:70%;
+    width:50%;
     background-color: white;
     margin:auto;
     padding:2%;
