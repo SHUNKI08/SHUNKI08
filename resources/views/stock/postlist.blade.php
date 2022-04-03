@@ -2,8 +2,11 @@
 @section('title','材料検索結果')
 
 @section('content')
-<h2>検索結果</h2>
-<h3>検索ワード : {{$material}}</h3>
+<div class="grid_base">
+    <h2 class="grid_src">検索結果</h2>
+    <h3 class="grid_word">検索ワード : {{$material}}</h3>
+</div>
+
 <br>
 <div class="posts">
 
